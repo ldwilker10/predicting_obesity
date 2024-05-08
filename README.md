@@ -51,14 +51,41 @@ This dataset from the 2022 BRFSS contains 445132 entries and have 326 columns re
 
 ## Data Preparation 
 
+Before building the model, the data underwent several preprocessing steps including:
+
+- Filtering columns down to including necessary columns for anlaysis
+- Cleaning data to remove missing/null values and placeholder values
+- Data distribution analysis to understand the class balance or imbalance
+- Visualizing different features to understand distribution and relationship with variable
+
+  
+During data preparation and preprocessing data was prepared for modeling by the following:
+
+- Data was rescaled and normalized to the range [0,1] for modeling 
+- Class imbalance was accounted for by utilizing SMOTE
+- The data was also subsampled for the modeling process to allow for shorter computation run times. Twenty-five percent of the data was used for training.
 
 
 ## Modeling 
 
+### Baseline Model/ Model 1:
+
+A Baseline Logistic Regression model was constructed for this project. The model was a simplae logistic regression model with defualt parameters. The main metrics used to evaluate model performance included accuracy, recall and f1 score. The baseline model had a test accuracy of 0.6993, test recall of 0.9226, and a test f1 score of 0.6719.
+
+- Model's Accuracy Score: 0.6993164651483386
+- Model's F1 Score: 0.6718796521194077
+- Model's Recall Score: 0.9226200723016009
+
+
+### Best Performing Model/ Model 2:
+The Best Model had the.
 
 
 
 ## Evaluation
+
+Evaluation
+The Best Model is the ideal model to choose here because it performs better at correctly classifying/ predicting individuals as shown by the slight improvement in test accuracy, test recall, and f1-score. While this model is higher with recall and correctly identifying those with obesity, there is the chance for more false positive results (individuals being classified as having obesity who in fact do not). This is more ideal because we would rather correctly identify positive cases than to not identify someone with obesity because interventions or recommendations that are usually geared towards addressing obesity are generally good recommendations for anyone to partake in or be aware of for health in general.
 
 ![image](link)
 
