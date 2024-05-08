@@ -1,15 +1,15 @@
 # predicting_obesity
 
-# Predicting Obesity with Demogrpahic and Lifestyle Factors
+# Predicting Obesity with Demographic and Lifestyle Factors
 
 # Elevator Pitch
 Obesity is a pressing global issue affecting millions. Leveraging the comprehensive BRFSS dataset, our model accurately predicts obesity based on lifestyle and demographic factors. With crucial insights, we can empower individuals and policymakers to make informed decisions, ultimately combating the obesity epidemic effectively.
 
-![image](link)
+![obesity_header](https://github.com/ldwilker10/predicting_obesity/blob/main/images/health_obesity_header_image.jpg)
 
 
 #### Project by: Lucas Wilkerson
-#### Date: 
+#### Date: 5/10/2024
 
 ## Project Overview
 
@@ -45,7 +45,9 @@ This dataset from the 2022 BRFSS contains 445132 entries and have 326 columns re
 
 ![BRFSS Codebook](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
 
-Upon data cleaning and preparation the final dataset had 209405 entries with 39 columns: 
+Obesity Prevalence in cleaned dataset:
+
+![obesity_prevalence](https://github.com/ldwilker10/predicting_obesity/blob/main/images/obesity_prevalence.png)
 
 
 
@@ -106,9 +108,28 @@ The adjusted/tuned neural network model is the ideal model to choose here becaus
 
 ## Conclusion/ Recommendations 
 
+The tuned neural network model showed the best performance in identifying those with obesity based on the various features and demogrpahics and lifestyle factors. The model showed that out of all individuals with obesity, it could correctly identify 93.23 % of those individuals. This can provide great benefit for public health professionals by increasing detection and allowing targeted and specific interventions. By adressing this health concern early, this can improve an individuals quality of life and overall health outcomes by preventing accerleration of disease and negative health consequences while also decreasing the load on the healthcare system and the providers.
+
+Recommendations:
+
+- Public health professionals should utilize this model as an additional tool when determining public health initiatives/ interventions aimed at obesity. 
+
+- While this model is not an official diagnostic tool for obesity, this model can be utilized for identification. Using this model, preventative health methods, such as dietary education or exercise recommendations, could be implemented early on before disease progression or development of other co-morbidities.
+
+- Public Health Policy makers should also utilize this model and information to develop targeted interventions based on the most influence features that seem to contribute to obesity.
+
+- In the context of identifying obesity status and risk, public health education and interventions should take into account an individuals ethnicity/race and/ or cultural customs, the individuals number of children and also their past medical history related to heart condition. 
 
 
 ## Limitations
+
+While the model can be useful to predicting individuals with obesity based on various health and lifestyles factors, the model is not perfect and does have it's limitations.
+
+- False positives: When individuals actually have obesity, the model correctly identifies those indiviudals approximiately 93.23% of the time. With having a higher recall, there is an increased risk of mislabeling indiviudals without obesity as having obesity. While there is this increased chance, having an increased risk of incorrectly identifying someone as having obesity is a better trade off in this situation that incorrectly labeling someone as not having obesity when they in fact do have obesity. If someone is labeled as a false positive, recommending lifestyle interventions to address obesity could still be good advice as a preventative thought to a healthy normal weight individiual. 
+
+- Data loss: the initial dataset was very large with more columns and numerous missing values. To less the burden on computation power and speed up run times, numerous null values were dropped and the dataset was subsampled to run models on a smaller training percentage. 
+
+- Numerous Features: Only a subset of features/ columns were explore leading other features to no be accounted for which could potentially have affects on the target variable. 
 
 
 ## Contact Information
@@ -121,10 +142,10 @@ The adjusted/tuned neural network model is the ideal model to choose here becaus
 
 ## Repository Structure
 
-├── folder                                                                                                                                 
-├── draft_models     
+├── data                                                                                                                                 
+├── draft_notebooks     
 ├── images   
 ├── .gitignore                                                                                                                   
-├── [README.md](link)                                          
-├── [notebook.ipynb](link)       
+├── [README.md](https://github.com/ldwilker10/predicting_obesity/blob/main/README.md)                                          
+├── [notebook.ipynb](https://github.com/ldwilker10/predicting_obesity/blob/main/notebook_final.ipynb)       
 └── [presentation.pdf](link)   
