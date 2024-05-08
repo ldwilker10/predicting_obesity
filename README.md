@@ -1,8 +1,9 @@
 # predicting_obesity
 
-# Predicting ___ with ___
+# Predicting Obesity with Demogrpahic and Lifestyle Factors
 
 # Elevator Pitch
+Obesity is a pressing global issue affecting millions. Leveraging the comprehensive BRFSS dataset, our model accurately predicts obesity based on lifestyle and demographic factors. With crucial insights, we can empower individuals and policymakers to make informed decisions, ultimately combating the obesity epidemic effectively.
 
 ![image](link)
 
@@ -25,11 +26,11 @@ The findings from this analysis will be able to help inform and guide public hea
 
 
 
-## Data Understanding (make sure to add link to dataset)
+## Data Understanding 
 
 The primary dataset for this project is from the Behavioral Risk Factor Surveillance System (BRFSS) dataset, available on Kaggle and also found on the CDC's website. The BRFSS is done annually via telephone surveys, and provides comprehensive data that is collected from U.S. residents regarding their health-related risk behaviors, chronic health conditions, their use of preventive services, and other various diet and lifestyle factors. The dataset includes variables such as demographics (age, gender, race/ethnicity), physical activity levels, health indicators (obesity status), and other various factors. 
 
-This dataset from the 2022 BRFSS contains 445132 entries and have 326 columns representing the multiple features. For this analysis, I plan to use a subset of the columns representing a variety of features that could be linked with obesity or may be interesting to explore in relation to the target variable.  
+This dataset from the 2022 BRFSS contains 445132 entries and have 326 columns representing the multiple features. For this analysis, I plan to use a subset of the columns representing a variety of features that could be linked with obesity or may be interesting to explore in relation to the target variable. Upon data cleaning and preparation the final dataset had 209405 entries with 39 columns. 
 
 
 - Data Source: Behavioral Risk Factor Surveillance System (BRFSS) dataset from Kaggle (https://www.kaggle.com/datasets/ariaxiong/behavioral-risk-factor-surveillance-system-2022/data)
@@ -43,6 +44,9 @@ This dataset from the 2022 BRFSS contains 445132 entries and have 326 columns re
 - For additional feature information and description along the code description for the values, those can be found at the CDC's link for the 2022 BRFSS (https://www.cdc.gov/brfss/annual_data/annual_2022.html)
 
 ![BRFSS Codebook](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
+
+Upon data cleaning and preparation the final dataset had 209405 entries with 39 columns: 
+
 
 
 ![dataset_name](link)
@@ -78,14 +82,21 @@ A Baseline Logistic Regression model was constructed for this project. The model
 
 
 ### Best Performing Model/ Model 2:
-The Best Model had the.
+
+The best model of the adjusted/tuned nerual network model had an architecture made of multiple dense layers with adjustments made to the learning rate, number of filters, class balance, batch size and number of epochs. Learning rate was adjust to 0.001 and batch size was equal to 50 with total epochs being 5. The Best Model had a test accuracy of 0.7006 and test recall of 0.9324, which indicates that out of all of the individuals with obesity, the model correctly labeled ~93.24% of the individuals that actually. Performance with test recall and test accuracy were improved compared to baseline, however f1 score was slightly lower. 
+
+With the best performing model (tuned neural network) the scores were:
+
+- Model's Accuracy Score: 0.7005801200866699
+- Model's F1 Score: 0.6671204566955566
+- Model's Recall Score: 0.9323569536209106
+
 
 
 
 ## Evaluation
 
-Evaluation
-The Best Model is the ideal model to choose here because it performs better at correctly classifying/ predicting individuals as shown by the slight improvement in test accuracy, test recall, and f1-score. While this model is higher with recall and correctly identifying those with obesity, there is the chance for more false positive results (individuals being classified as having obesity who in fact do not). This is more ideal because we would rather correctly identify positive cases than to not identify someone with obesity because interventions or recommendations that are usually geared towards addressing obesity are generally good recommendations for anyone to partake in or be aware of for health in general.
+The adjusted/tuned neural network model is the ideal model to choose here because it performs better at correctly classifying/ predicting individuals as shown by the slight improvement in test accuracy, test recall, and f1-score. While this model is higher with recall and correctly identifying those with obesity, there is the chance for more false positive results (individuals being classified as having obesity who in fact do not). This is more ideal because we would rather correctly identify positive cases than to not identify someone with obesity because interventions or recommendations that are usually geared towards addressing obesity are generally good recommendations for anyone to partake in or be aware of for health in general.
 
 ![image](link)
 
