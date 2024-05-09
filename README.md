@@ -72,25 +72,24 @@ A Baseline Logistic Regression model was constructed for this project. The model
 
 ### Best Performing Model/ Model 2:
 
-The best model of the adjusted/tuned nerual network model had an architecture made of multiple dense layers with adjustments made to the learning rate, number of filters, class balance, batch size and number of epochs. Learning rate was adjust to 0.001 and batch size was equal to 50 with total epochs being 5. The Best Model had a test accuracy of 0.7006 and test recall of 0.9324, which indicates that out of all of the individuals with obesity, the model correctly labeled ~93.24% of the individuals that actually. Performance with test recall and test accuracy were improved compared to baseline, however f1 score was slightly lower. 
+The best model of the logistic regression mode had a test accuracy of 0.6912 and test recall of 0.9402, which indicates that out of all of the individuals with obesity, the model correctly labeled ~94.02% of the individuals that actually. Performance with test recall was improved compared to baseline while F1 score and accuracy were similar.  
 
-With the best performing model (tuned neural network) the scores were:
+With the best performing model the scores were:
 
-- Model's Accuracy Score: 0.7005801200866699
-- Model's F1 Score: 0.6671204566955566
-- Model's Recall Score: 0.9323569536209106
-
+- Model's Accuracy Score: 0.6912030787788277
+- Model's F1 Score: 0.6701739317156967
+- Model's Recall Score: 0.9402220692029609
 
 
 ## Evaluation
 
-The adjusted/tuned neural network model is the ideal model to choose here because it performs better at correctly classifying/ predicting individuals as shown by the slight improvement in test accuracy, test recall, and f1-score. While this model is higher with recall and correctly identifying those with obesity, there is the chance for more false positive results (individuals being classified as having obesity who in fact do not). This is more ideal because we would rather correctly identify positive cases than to not identify someone with obesity because interventions or recommendations that are usually geared towards addressing obesity are generally good recommendations for anyone to partake in or be aware of for health in general.
+The tuned logistic regression model is the ideal model to choose here because it performs better at correctly classifying/ predicting individuals as shown by the slight improvement in test accuracy, test recall, and f1-score. While this model is higher with recall and correctly identifying those with obesity, there is the chance for more false positive results (individuals being classified as having obesity who in fact do not). This is more ideal because we would rather correctly identify positive cases than to not identify someone with obesity because interventions or recommendations that are usually geared towards addressing obesity are generally good recommendations for anyone to partake in or be aware of for health in general.
 
 | Metric                  | Baseline                          | Best Model                        |
 |-------------------------|-----------------------------------|-----------------------------------|
-| Test Accuracy           | 0.6993                            | 0.7006                            |
-| Test F1 Score           | 0.6719                            | 0.6671                            |
-| Test Recall             | 0.9226                            | 0.9324                            |
+| Test Accuracy           | 0.6993                            | 0.6912                            |
+| Test F1 Score           | 0.6719                            | 0.6702                            |
+| Test Recall             | 0.9226                            | 0.9402                            |
 
 
 ![confusion_matrix](link)
@@ -98,7 +97,7 @@ The adjusted/tuned neural network model is the ideal model to choose here becaus
 
 ## Conclusion/ Recommendations 
 
-The tuned neural network model showed the best performance in identifying those with obesity based on the various features and demogrpahics and lifestyle factors. The model showed that out of all individuals with obesity, it could correctly identify 93.23 % of those individuals. This can provide great benefit for public health professionals by increasing detection and allowing targeted and specific interventions. By adressing this health concern early, this can improve an individuals quality of life and overall health outcomes by preventing accerleration of disease and negative health consequences while also decreasing the load on the healthcare system and the providers.
+The tuned logistic regression model showed the best performance in identifying those with obesity based on the various features and demogrpahics and lifestyle factors. The model showed that out of all individuals with obesity, it could correctly identify 94.02 % of those individuals. This can provide great benefit for public health professionals by increasing detection and allowing targeted and specific interventions. By adressing this health concern early, this can improve an individuals quality of life and overall health outcomes by preventing accerleration of disease and negative health consequences while also decreasing the load on the healthcare system and the providers.
 
 Recommendations:
 
@@ -106,7 +105,8 @@ Recommendations:
 
 - While this model is not an official diagnostic tool for obesity, this model can be utilized for identification. Using this model, preventative health methods, such as dietary education or exercise recommendations, could be implemented early on before disease progression or development of other co-morbidities.
 
-- Public Health Policy makers should also utilize this model and information to develop targeted interventions based on the most influence features that seem to contribute/ correlate to obesity.
+- Public Health Policy makers should also utilize this model and information to develop targeted interventions based on the most influence features that seem to contribute to obesity.
+
 
 
 ## Limitations
