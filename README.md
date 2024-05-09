@@ -1,12 +1,10 @@
-# predicting_obesity
-
 # Predicting Obesity with Demographic and Lifestyle Factors
-
-# Elevator Pitch
-Obesity is a pressing global issue affecting millions. Leveraging the comprehensive BRFSS dataset, our model accurately predicts obesity based on lifestyle and demographic factors. With crucial insights, we can empower individuals and policymakers to make informed decisions, ultimately combating the obesity epidemic effectively.
 
 ![obesity_header](https://github.com/ldwilker10/predicting_obesity/blob/main/images/health_obesity_header_image.jpg)
 
+
+# Elevator Pitch
+Obesity is a pressing global issue affecting millions. Leveraging the comprehensive BRFSS dataset, our model accurately predicts obesity based on lifestyle and demographic factors. With crucial insights, we can empower individuals and policymakers to make informed decisions, ultimately combating the obesity epidemic effectively.
 
 #### Project by: Lucas Wilkerson
 #### Date: 5/10/2024
@@ -34,16 +32,16 @@ This dataset from the 2022 BRFSS contains 445132 entries and have 326 columns re
 
 
 - Data Source: Behavioral Risk Factor Surveillance System (BRFSS) dataset from Kaggle (https://www.kaggle.com/datasets/ariaxiong/behavioral-risk-factor-surveillance-system-2022/data)
-- 
-![Behavioral Risk Factor Surveillance System (BRFSS)](https://www.kaggle.com/datasets/ariaxiong/behavioral-risk-factor-surveillance-system-2022/data)
+  
+[Behavioral Risk Factor Surveillance System (BRFSS)](https://www.kaggle.com/datasets/ariaxiong/behavioral-risk-factor-surveillance-system-2022/data)
 
 - Link to original data source from the CDC on Data.gov ( https://www.cdc.gov/brfss/annual_data/annual_2022.html)
 
-![Behavioral Risk Factor Surveillance System (BRFSS)](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
+[Behavioral Risk Factor Surveillance System (BRFSS)](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
  
 - For additional feature information and description along the code description for the values, those can be found at the CDC's link for the 2022 BRFSS (https://www.cdc.gov/brfss/annual_data/annual_2022.html)
 
-![BRFSS Codebook](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
+[BRFSS Codebook](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
 
 Obesity Prevalence in cleaned dataset:
 
@@ -51,9 +49,8 @@ Obesity Prevalence in cleaned dataset:
 
 
 
-![dataset_name](link)
+![bmi_dist](link)
 
-![image](link)
 
 ## Data Preparation 
 
@@ -76,7 +73,7 @@ During data preparation and preprocessing data was prepared for modeling by the 
 
 ### Baseline Model/ Model 1:
 
-A Baseline Logistic Regression model was constructed for this project. The model was a simplae logistic regression model with defualt parameters. The main metrics used to evaluate model performance included accuracy, recall and f1 score. The baseline model had a test accuracy of 0.6993, test recall of 0.9226, and a test f1 score of 0.6719.
+A Baseline Logistic Regression model was constructed for this project. The model was a simple logistic regression model with defualt parameters. The main metrics used to evaluate model performance included accuracy, recall and f1 score. The baseline model had a test accuracy of 0.6993, test recall of 0.9226, and a test f1 score of 0.6719.
 
 - Model's Accuracy Score: 0.6993164651483386
 - Model's F1 Score: 0.6718796521194077
@@ -95,15 +92,18 @@ With the best performing model (tuned neural network) the scores were:
 
 
 
-
 ## Evaluation
 
 The adjusted/tuned neural network model is the ideal model to choose here because it performs better at correctly classifying/ predicting individuals as shown by the slight improvement in test accuracy, test recall, and f1-score. While this model is higher with recall and correctly identifying those with obesity, there is the chance for more false positive results (individuals being classified as having obesity who in fact do not). This is more ideal because we would rather correctly identify positive cases than to not identify someone with obesity because interventions or recommendations that are usually geared towards addressing obesity are generally good recommendations for anyone to partake in or be aware of for health in general.
 
-![image](link)
+| Metric                  | Baseline                          | Best Model                        |
+|-------------------------|-----------------------------------|-----------------------------------|
+| Test Accuracy           | 0.6993                            | 0.7006                            |
+| Test F1 Score           | 0.6719                            | 0.6671                            |
+| Test Recall             | 0.9226                            | 0.9324                            |
 
 
-![image](link)
+![confusion_matrix](link)
 
 
 ## Conclusion/ Recommendations 
@@ -116,9 +116,7 @@ Recommendations:
 
 - While this model is not an official diagnostic tool for obesity, this model can be utilized for identification. Using this model, preventative health methods, such as dietary education or exercise recommendations, could be implemented early on before disease progression or development of other co-morbidities.
 
-- Public Health Policy makers should also utilize this model and information to develop targeted interventions based on the most influence features that seem to contribute to obesity.
-
-- In the context of identifying obesity status and risk, public health education and interventions should take into account an individuals ethnicity/race and/ or cultural customs, the individuals number of children and also their past medical history related to heart condition. 
+- Public Health Policy makers should also utilize this model and information to develop targeted interventions based on the most influence features that seem to contribute/ correlate to obesity.
 
 
 ## Limitations
