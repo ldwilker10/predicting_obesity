@@ -2,7 +2,6 @@
 
 ![obesity_header](https://github.com/ldwilker10/predicting_obesity/blob/main/images/health_obesity_header_image.jpg)
 
-
 # Elevator Pitch
 Obesity is a pressing global issue affecting millions. Leveraging the comprehensive BRFSS dataset, our model accurately predicts obesity based on lifestyle and demographic factors. With crucial insights, we can empower individuals and policymakers to make informed decisions, ultimately combating the obesity epidemic effectively.
 
@@ -10,7 +9,6 @@ Obesity is a pressing global issue affecting millions. Leveraging the comprehens
 #### Date: 5/10/2024
 
 ## Project Overview
-
 
 ## Business Understanding (Problem/Stakeholder)
 
@@ -23,7 +21,6 @@ To help determine the best areas of focus, this project aims to investigate the 
 The findings from this analysis will be able to help inform and guide public health strategies, interventions, and policies aimed at reducing obesity rates and promoting healthier lifestyles. 
 
 
-
 ## Data Understanding 
 
 The primary dataset for this project is from the Behavioral Risk Factor Surveillance System (BRFSS) dataset, available on Kaggle and also found on the CDC's website. The BRFSS is done annually via telephone surveys, and provides comprehensive data that is collected from U.S. residents regarding their health-related risk behaviors, chronic health conditions, their use of preventive services, and other various diet and lifestyle factors. The dataset includes variables such as demographics (age, gender, race/ethnicity), physical activity levels, health indicators (obesity status), and other various factors. 
@@ -31,25 +28,18 @@ The primary dataset for this project is from the Behavioral Risk Factor Surveill
 This dataset from the 2022 BRFSS contains 445132 entries and have 326 columns representing the multiple features. For this analysis, I plan to use a subset of the columns representing a variety of features that could be linked with obesity or may be interesting to explore in relation to the target variable. Upon data cleaning and preparation the final dataset had 209405 entries with 39 columns. 
 
 
-- Data Source: Behavioral Risk Factor Surveillance System (BRFSS) dataset from Kaggle (https://www.kaggle.com/datasets/ariaxiong/behavioral-risk-factor-surveillance-system-2022/data)
-  
-[Behavioral Risk Factor Surveillance System (BRFSS)](https://www.kaggle.com/datasets/ariaxiong/behavioral-risk-factor-surveillance-system-2022/data)
+- Data Source:[Behavioral Risk Factor Surveillance System (BRFSS)](https://www.kaggle.com/datasets/ariaxiong/behavioral-risk-factor-surveillance-system-2022/data) obtained from Kaggle
 
-- Link to original data source from the CDC on Data.gov ( https://www.cdc.gov/brfss/annual_data/annual_2022.html)
-
-[Behavioral Risk Factor Surveillance System (BRFSS)](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
+- Link to original data source:[Behavioral Risk Factor Surveillance System (BRFSS) from CDCon Data.gov](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
  
-- For additional feature information and description along the code description for the values, those can be found at the CDC's link for the 2022 BRFSS (https://www.cdc.gov/brfss/annual_data/annual_2022.html)
-
-[BRFSS Codebook](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
+- For additional feature information and description along the code description for the values, those can be found at the CDC's link for the 2022 BRFSS: [BRFSS Codebook](https://www.cdc.gov/brfss/annual_data/annual_2022.html)
 
 Obesity Prevalence in cleaned dataset:
 
 ![obesity_prevalence](https://github.com/ldwilker10/predicting_obesity/blob/main/images/obesity_prevalence.png)
 
 
-
-![bmi_dist](link)
+![bmi_dist](https://github.com/ldwilker10/predicting_obesity/blob/main/images/bmi_distribution.png)
 
 
 ## Data Preparation 
@@ -145,5 +135,5 @@ While the model can be useful to predicting individuals with obesity based on va
 ├── images   
 ├── .gitignore                                                                                                                   
 ├── [README.md](https://github.com/ldwilker10/predicting_obesity/blob/main/README.md)                                          
-├── [notebook.ipynb](https://github.com/ldwilker10/predicting_obesity/blob/main/notebook_final.ipynb)       
+├── [notebook_final.ipynb](https://github.com/ldwilker10/predicting_obesity/blob/main/notebook_final.ipynb)       
 └── [presentation.pdf](link)   
