@@ -96,7 +96,7 @@ The tuned logistic regression model is the ideal model to choose here because it
 
 Feature Importances of Best Model:
 
-![feature_importances](https://github.com/ldwilker10/predicting_obesity/blob/main/images/feature_importances_obese.png)
+![feature_importances](https://github.com/ldwilker10/predicting_obesity/blob/main/images/tuned_log_feature_importance.png)
 
 ## Conclusion/ Recommendations 
 
@@ -139,4 +139,4 @@ While the model can be useful to predicting individuals with obesity based on va
 ├── .gitignore                                                                                                                   
 ├── [README.md](https://github.com/ldwilker10/predicting_obesity/blob/main/README.md)                                          
 ├── [notebook_final.ipynb](https://github.com/ldwilker10/predicting_obesity/blob/main/notebook_final.ipynb)       
-└── [presentation.pdf](link)   
+└── [presentation.pdf](https://github.com/ldwilker10/predicting_obesity/blob/main/presentation.pdf)   
