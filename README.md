@@ -92,8 +92,11 @@ The tuned logistic regression model is the ideal model to choose here because it
 | Test Recall             | 0.9226                            | 0.9402                            |
 
 
-![confusion_matrix](link)
+![confusion_matrix](https://github.com/ldwilker10/predicting_obesity/blob/main/images/confusion_matrix.png)
 
+Feature Importances of Best Model:
+
+![feature_importances](https://github.com/ldwilker10/predicting_obesity/blob/main/images/feature_importances_obese.png)
 
 ## Conclusion/ Recommendations 
 
